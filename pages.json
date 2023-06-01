@@ -1,0 +1,603 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+		"^i-(.*)": "@/i-ui/components/i-$1/i-$1.vue"
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#2979FF",
+		"backgroundColor": "#f3f4f6"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#2979FF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/uview/example/component.png",
+				"selectedIconPath": "static/uview/example/component_select.png",
+				"text": "首页"
+			},
+			// {
+			// 	"pagePath": "pages/service/service",
+			// 	"iconPath": "static/uview/example/js.png",
+			// 	"selectedIconPath": "static/uview/example/js_select.png",
+			// 	"text": "全部服务"
+			// },
+			// {
+			// 	"pagePath": "pages/zhuanti/zhuanti",
+			// 	"iconPath": "static/uview/example/template.png",
+			// 	"selectedIconPath": "static/uview/example/template_select.png",
+			// 	"text": "专题"
+			// },
+			{
+				"pagePath": "pages/news/news",
+				"iconPath": "static/uview/example/template.png",
+				"selectedIconPath": "static/uview/example/template_select.png",
+				"text": "新闻"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/uview/example/my.png",
+				"selectedIconPath": "static/uview/example/my_select.png",
+				"text": "我"
+			}
+		]
+	},
+	"pages": [
+		// {
+		//     "path" : "pages/login/adv",
+		//     "style" :                                                                                    
+		//     {
+		//         "navigationBarTitleText": "",
+		//         "enablePullDownRefresh": false,
+		// 				"navigationStyle":"custom"
+		//     }
+
+		// },
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationStyle":"custom",
+				// "navigationBarTitleText": "首页",
+				// "navigationBarTextStyle": "white",
+				// "navigationBarBackgroundColor": "#2979FF",
+				"enablePullDownRefresh": false
+				// "backgroundColor": "#f3f4f6"
+			}
+		}, {
+			"path": "pages/service/service",
+			"style": {
+				"navigationBarTitleText": "全部服务",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#2979FF",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#2979FF",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "新闻",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#2979FF",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/zhuanti",
+			"style": {
+				"navigationBarTitleText": "专题",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/fuping/zhuanti",
+			"style": {
+				"navigationBarTitleText": "专题",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/home/detail",
+			"style": {
+				"navigationBarTitleText": "新闻详情",
+				"navigationBarBackgroundColor": "#2979FF",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/home/comment",
+			"style": {
+				"navigationBarTitleText": "新闻评论",
+				"navigationBarBackgroundColor": "#2979FF",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/home/result",
+			"style": {
+				"navigationBarTitleText": "搜索结果",
+				"navigationBarBackgroundColor": "#2979FF",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/password",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/info",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/order",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"backgroundColor": "white"
+			}
+
+		}
+
+		, {
+			"path": "pages/service/park/index",
+			"style": {
+				"navigationBarTitleText": "停哪儿",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"backgroundColor": "#f3f4f6"
+			}
+
+		}, {
+			"path": "pages/service/analyse/index",
+			"style": {
+				"navigationBarTitleText": "数据分析",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/fuping/case",
+			"style": {
+				"navigationBarTitleText": "扶贫案例",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/fuping/mao/mao",
+			"style": {
+				"navigationBarTitleText": "村情村貌",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/fuping/helpMsg",
+			"style": {
+				"navigationBarTitleText": "求助信息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/fuping/act",
+			"style": {
+				"navigationBarTitleText": "入户走访",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/fuping/push",
+			"style": {
+				"navigationBarTitleText": "案例发布",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/fuping/mao/maoDetail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made/changshang/changshang",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made/product/product",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made/active/active",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made/zhaopin/zhaopin",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made/join/join",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made2/changshang/changshang",
+			"style": {
+				"navigationBarTitleText": "厂商列表",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made2/product/product",
+			"style": {
+				"navigationBarTitleText": "产品列表",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made2/active/active",
+			"style": {
+				"navigationBarTitleText": "展会活动",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made2/zhaoping/zhaoping",
+			"style": {
+				"navigationBarTitleText": "厂商招聘",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made2/join/join",
+			"style": {
+				"navigationBarTitleText": "厂商入驻",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made2/active/detail",
+			"style": {
+				"navigationBarTitleText": "展会活动详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made2/changshang/detail",
+			"style": {
+				"navigationBarTitleText": "厂商详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made2/join/detail",
+			"style": {
+				"navigationBarTitleText": "厂商入驻详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made2/product/detail",
+			"style": {
+				"navigationBarTitleText": "产品详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/zhuanti/made2/zhaoping/detail",
+			"style": {
+				"navigationBarTitleText": "招聘详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/analyse/index2",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/movie/index",
+			"style": {
+				"navigationBarTitleText": "看电影",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/movie/result",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/movie/detail",
+			"style": {
+				"navigationBarTitleText": "电影详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/law/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/youthStation/index",
+			"style": {
+				"navigationBarTitleText": "青年驿站",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/youthStation/rencai",
+			"style": {
+				"navigationBarTitleText": "人才",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/youthStation/detail",
+			"style": {
+				"navigationBarTitleText": "驿站详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/youthStation/rencaiDetail",
+			"style": {
+				"navigationBarTitleText": "人才政策文件详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/law/legal-expertise",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/law/person-list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/takeout/index",
+			"style": {
+				"navigationBarTitleText": "外卖点餐",
+				"enablePullDownRefresh": false
+				// "navigationStyle":"custom"
+			}
+
+		}, {
+			"path": "pages/service/takeout/order",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/takeout/sale-detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/activity/activityDetail",
+			"style": {
+				"navigationBarTitleText": "活动详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/activity/index",
+			"style": {
+				"navigationBarTitleText": "活动",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/activity/newsReview",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/bus_query/step1",
+			"style": {
+				"navigationBarTitleText": "巴士详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/bus_query/step2",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/service/bus_query/step3",
+			"style": {
+				"navigationBarTitleText": "乘坐信息",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/service/bus_query/step4",
+			"style": {
+				"navigationBarTitleText": "购票成功",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/service/bus_query/custom_shuttle",
+			"style": {
+				"navigationBarTitleText": "巴士列表",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/park/park",
+			"style": {
+				"navigationBarTitleText": "停车场信息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/park/parkDesc",
+			"style": {
+				"navigationBarTitleText": "停车记录",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/service/outpatient/hospitalList",
+			"style": {
+				"navigationBarTitleText": "门诊预约",
+				"navigationBarBackgroundColor": "#6E78F7"
+			}
+		}, {
+			"path": "pages/service/outpatient/hospitalDesc",
+			"style": {
+				"navigationBarTitleText": "医院详情",
+				"navigationBarBackgroundColor": "#6E78F7"
+
+			}
+		}, {
+			"path": "pages/service/outpatient/personList",
+			"style": {
+				"navigationBarTitleText": "就诊人卡片",
+				"navigationBarBackgroundColor": "#6E78F7"
+
+			}
+		}, {
+			"path": "pages/service/outpatient/appointmentResult",
+			"style": {
+				"navigationBarTitleText": "预约历史",
+				"navigationBarBackgroundColor": "#6E78F7"
+
+			}
+		}, {
+			"path": "pages/service/outpatient/appointmentConfirm",
+			"style": {
+				"navigationBarTitleText": "预约确认单",
+				"navigationBarBackgroundColor": "#6E78F7"
+
+			}
+		}, {
+			"path": "pages/service/outpatient/registration",
+			"style": {
+				"navigationBarTitleText": "预约挂号",
+				"navigationBarBackgroundColor": "#6E78F7"
+
+			}
+		}, {
+			"path": "pages/service/outpatient/addperson",
+			"style": {
+				"navigationBarTitleText": "新增/编辑就诊人",
+				"navigationBarBackgroundColor": "#6E78F7"
+			}
+		}, {
+			"path": "pages/service/job/index",
+			"style": {
+				"navigationBarTitleText": "找工作",
+				"navigationBarBackgroundColor": "#007AFF"
+			}
+		}, {
+			"path": "pages/service/job/jobDetail",
+			"style": {
+				"navigationBarTitleText": "职位详情",
+				"navigationBarBackgroundColor": "#007AFF"
+			}
+		}, {
+			"path": "pages/service/job/resumeManage",
+			"style": {
+				"navigationBarTitleText": "个人简历管理",
+				"navigationBarBackgroundColor": "#007AFF"
+			}
+		}
+	    ,{
+            "path" : "i-ui/components/i-card/i-card",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/service/house/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "找房子",
+                "navigationBarTitleColor": "white",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/user/order2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ]
+}
